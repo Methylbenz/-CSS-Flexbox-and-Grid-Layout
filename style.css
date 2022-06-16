@@ -1,78 +1,45 @@
- *{
+*{
     margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
- }
- body{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
- }
- .box-container{
-    width: 100%;
-    max-height: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
- }
- .box{
-    width: 269px;
-    padding: 15px;
-    min-height: 430px;
- }
- .box1{
-    background-color: hsl(31, 77%, 52%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
- }
-.box2{
-    background-color: hsl(184, 100%, 22%);
+    padding: 0;
+    
 }
-.box3{
-    background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+
+body{
+    background-color: gray;
+    min-height:100vh;
 }
-.content{
-    padding: 10px;
+main{
+    display: grid;
+    grid-template-areas:
+     'a a b'
+     'c d d'
+     'c e e'
+ ;
 }
-h1{
-    color: hsl(0, 0%, 95%);
-    text-transform: uppercase;
-    font-family: 'Lexend Deca', sans-serif;
-    margin: 20px 0;
+main, div{
+    padding: 1.5cm;
+    text-align: center;
+    gap: 5px;
 }
-p{
-    color: hsl(0, 100%, 75);
-    font-family: 'Big Shoulders Display', cursive;
+.item-a{
+    background-color: blue;
+    grid-area: a;
 }
-.btn{
-    margin: 60px 0;
-    padding: 15px 40px;
-    border: 0;
-    border-radius: 30px;
-    outline: none;
-    background-color: white;
-    font-size: 15px;
-    cursor: pointer;
-    font-family: 'lexend Deca', sans-serif;
-    font-weight: 700;
+.item-b{
+    background-color: rgb(220, 231, 240);
+    grid-area: b;
 }
-.btn1{
-    color: hsl(31, 77%, 52%);
+.item-c{
+    background-color: peachpuff;
+    grid-area: c;
 }
-.btn2{
-    color: hsl(184, 100%, 22%);
+.item-d{
+    background-color: gold;
+    grid-area: d;
+    padding: 1cm;
 }
-.btn3{
-    color: hsl(179, 100%, 13%);
-}
-.btn :hover{
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;   
-    transition: 0.4s; 
+.item-e{
+    background-color: rgb(19, 226, 147);
+    grid-area: e;
+    padding: 1.3cm;
 }
